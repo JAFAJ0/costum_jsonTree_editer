@@ -74,7 +74,7 @@ const UserList = ({
                     {Object.entries(user).map(([key, value]) => {
                       return (
                         key !== "id" && (
-                          <>
+                          <div key={key}>
                             <textarea
                               value={key}
                               style={{ fontWeight: "bold", border: "none" }}
@@ -118,7 +118,7 @@ const UserList = ({
                                 </button>
                               </>
                             )}
-                          </>
+                          </div>
                         )
                       );
                     })}

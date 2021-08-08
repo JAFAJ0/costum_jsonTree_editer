@@ -11,17 +11,16 @@ const ImagesList = ({
   return (
     <div className="coordinates">
       <h3>images</h3>
-
       <button
         className="button"
         style={{
           marginTop: "0.5%",
-          //marginRight: "5%",
           margin: "auto",
           border: "none",
           width: 30,
           height: 40,
-          color: "grey"
+          color: "grey",
+          background: "lightblue"
         }}
         type="button"
         onClick={() => setIsexpandedI(!isexpandedI)}
@@ -36,9 +35,8 @@ const ImagesList = ({
           <p>Type:string</p>
           {images.map((image, i) => {
             return (
-              <div style={{ margin: "5%" }}>
+              <div style={{ margin: "5%" }} key={i}>
                 <textarea
-                  key={i}
                   style={{ width: "65%" }}
                   value={image}
                   onChange={(e) => setimages(e.target.value, i)}

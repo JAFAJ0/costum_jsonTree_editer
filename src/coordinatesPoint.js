@@ -36,10 +36,9 @@ const CoordinatesPoint = ({
           <p> Type: number</p>
           {Object.entries(coordinates).map(([key, value]) => {
             return (
-              <>
+              <div key={key}>
                 <textarea
                   value={key}
-                  key={key}
                   onChange={(e) => setXY(value, e.target.value)}
                   onKeyPress={(e) => removecoorinates(e.key, key, value)}
                   type="textarea"
@@ -50,7 +49,7 @@ const CoordinatesPoint = ({
                   onKeyPress={(e) => removecoorinates(e.key, key, value)}
                   type="textarea"
                 />
-              </>
+              </div>
             );
           })}
           <p>Type and press enter to add node</p>

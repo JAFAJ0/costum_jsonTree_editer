@@ -34,9 +34,8 @@ const PriceList = ({
           <p>Type:String</p>
           {prices.map((price, i) => {
             return (
-              <div style={{ margin: "5%" }}>
+              <div style={{ margin: "5%" }} key={i}>
                 <textarea
-                  key={i}
                   style={{ width: "65%" }}
                   value={price}
                   onChange={(e) => setPrices(e.target.value, i)}

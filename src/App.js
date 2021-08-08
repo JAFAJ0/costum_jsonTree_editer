@@ -261,14 +261,16 @@ export default function App() {
             onChange={(e) => setName(e.target.value)}
             type="textarea"
           />
+          <p></p>
           <button
-            class="button"
+            className="button"
             style={{
               margin: "1%",
               border: "none",
               width: 60,
               height: 30,
-              color: "black"
+              color: "blue",
+              background: "yellow"
             }}
             type="button"
             onClick={() => save(name)}
@@ -277,14 +279,15 @@ export default function App() {
           </button>
         </div>
         <button
-          class="button"
+          className="button"
           style={{
             marginTop: "0.5%",
             marginLeft: "49%",
             border: "none",
             width: 30,
             height: 40,
-            color: "grey"
+            color: "grey",
+            background: "pink"
           }}
           type="button"
           onClick={() => setIsexpanded(!isexpanded)}
