@@ -1,0 +1,44 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.name {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1%;
+  line-height: 5%;
+  font-weight: bold;
+}
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: white;
+}
+.coordinates {
+  font-size: 1rem;
+  margin: 1%;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(13, 228, 13);
+  width: 9%;
+  position: relative;
+}
+.users {
+  font-size: 1rem;
+  margin: 1%;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(226, 32, 80);
+  width: 90%;
+}
+textarea {
+  outline: 0;
+  width: 80%;
+  height: auto;
+  justify-content: center;
+  margin-left: 1%;
+  padding: 0.2rem;
+  font-size: 15px;
+  word-wrap: break-word;
+}
